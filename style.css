@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200;1,700&display=swap");
+
+/*
+* Developed by Antony Langlois (antonylanglois.com)
+* Designed by Wafa Ghazlani
+*/
+
+/*General*/
+:root {
+  --main-color: rgb(88, 42, 255);
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  background-image: url(images/marbre.png);
+}
+
+section {
+  margin-bottom: 14vh;
+}
+
+h1,
+h2,
+h3,
+.f200 {
+  font-style: italic;
+}
+
+h1,
+.f700 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 4vh;
+}
+
+h3 {
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.f200 {
+  font-weight: 200;
+}
+/*End General*/
+/*Header*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding-bottom: 12px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 80%
+  );
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  margin: auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  font-style: italic;
+  font-weight: 200;
+  white-space: nowrap;
+}
+
+nav li {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 4vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+.socials img {
+  width: 20px;
+}
+/*End Header/*
+/*A propos*/
+#a-propos {
+  margin-top: 12vh;
+}
+
+.wafa-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 4vh;
+}
+
+#wafa-description {
+  font-style: italic;
+  font-size: 24px;
+  margin-left: 6vw;
+}
+
+#wafa-ghazlani {
+  background-image: url(images/wafa.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140%;
+  min-width: 180px;
+  min-height: 180px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+
+.wafa-container a {
+  color: var(--main-color);
+  background-color: white;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 24px;
+  box-shadow: var(--box-shadow);
+}
+
+.wafa-container:nth-child(2) ul {
+  margin-left: 4vw;
+  position: relative;
+  left: 12vw;
+}
+
+.barre-competence,
+#compet-43,
+#compet-46,
+#compet-78 {
+  width: 20vw;
+  height: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.uxui {
+  background-color: #f29a49;
+}
+.htmlcss {
+  background-color: #7496eb;
+}
+.adobe {
+  background-color: #c967d1;
+}
+
+.wafa-container li {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.competence-titre {
+  text-align: right;
+  margin-right: 8px;
+  width: 8vw;
+}
+
+#compet-43,
+#compet-46,
+#compet-78 {
+  background-color: yellow;
+  right: 20vw;
+}
+
+#compet-43 {
+  width: calc(20vw * 0.43);
+  background-color: #ffd8b4;
+}
+#compet-46 {
+  width: calc(20vw * 0.46);
+  background-color: #9eb8f9;
+}
+#compet-78 {
+  width: calc(20vw * 0.78);
+  background-color: #eb7ff4;
+}
+
+.pourcentage {
+  position: absolute;
+  right: 16vw;
+  bottom: 16px;
+}
+/*End A Propos*/
+/*Experience*/
+#experience {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 14vh;
+}
+
+.exp-container {
+  min-width: 40%;
+  min-height: 500px;
+  display: flex;
+  gap: 12px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side {
+  align-items: center;
+}
+
+.right-side {
+  justify-content: space-between;
+}
+
+.chapeau,
+.valise {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 12px 0px;
+}
+
+.trait {
+  width: 2px;
+  background-color: var(--main-color);
+}
+
+.trait1 {
+  height: 150px;
+}
+.trait2 {
+  height: 100px;
+}
+.trait3 {
+  height: 40px;
+}
+.trait4 {
+  height: 70px;
+}
+.trait5 {
+  height: 80px;
+}
+
+.experience {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.exp-year {
+  color: var(--main-color);
+}
+
+.exp-title {
+  font-weight: 700;
+}
+
+.exp-location {
+  margin-bottom: 2vh;
+}
+
+.exp-description {
+  font-size: 14px;
+}
+/*End Experience*/
+/*Projets*/
+.projet-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.projet {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
+
+#project1,
+#project2,
+#project3,
+#project4,
+#project5,
+#project6 {
+  background-size: cover;
+  background-position: center;
+}
+
+#project1 {
+  background-image: url(images/project-amv.png);
+}
+#project2 {
+  background-image: url(images/project-cover.jpg);
+}
+#project3 {
+  background-image: url(images/project-instrument.png);
+}
+#project4 {
+  background-image: url(images/project-foot.png);
+}
+#project5 {
+  background-image: url(images/project-album.png);
+}
+#project6 {
+  background-image: url(images/project-cat.jpeg);
+}
+/*End Projets/*
+/*Contact*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+#contact img {
+  width: 40px;
+}
+/*End Contact*/
+/*Footer*/
+footer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 8vh;
+}
+
+footer div {
+  display: flex;
+  gap: 8vw;
+  padding-left: 8vw;
+}
+/*End Footer*/
+/*Media Queries*/
+@media screen and (max-width: 440px) {
+  .nav-container:nth-child(1) {
+    flex-direction: column;
+    gap: 2vh;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .exp-description {
+    width: 200px;
+  }
+  .exp-container {
+    width: 200px;
+  }
+
+  .trait1 {
+    height: 170px;
+  }
+  .trait2 {
+    height: 120px;
+  }
+  .trait3 {
+    height: 60px;
+  }
+  .trait4 {
+    height: 90px;
+  }
+  .trait5 {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .wafa-container {
+    flex-direction: column;
+  }
+
+  #wafa-ghazlani,
+  .wafa-container a {
+    margin-bottom: 2vh;
+  }
+
+  .wafa-container:nth-child(2) ul {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #wafa-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projet-container {
+    gap: 15px;
+  }
+
+  .projet {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  #experience {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .exp-container {
+    min-width: 400px;
+  }
+}
+/*End Media Queries*/
